@@ -4,6 +4,13 @@ A modern, full-featured e-commerce platform built with the MERN stack. E-Shop pr
 
 ---
 
+
+## 🌐 Live Demo
+
+- **Frontend:** [https://e-commerce-nu-blue-53.vercel.app](https://e-commerce-nu-blue-53.vercel.app)
+- **Backend API:** [https://e-commerce-production-fa5d.up.railway.app](https://e-commerce-production-fa5d.up.railway.app)
+
+
 ## ✨ Features
 
 ### 👤 User Features
@@ -139,8 +146,3 @@ Muhammad Abbas — [GitHub ] https://github.com/Muhammad-7Abbas  · [LinkedIn] M
 
 Built with ❤️ using React, Node.js, and MongoDB
 
-
-## 🌐 Live Demo
-
-- **Frontend:** [https://e-commerce-nu-blue-53.vercel.app](https://e-commerce-nu-blue-53.vercel.app)
-- **Backend API:** [https://e-commerce-production-fa5d.up.railway.app](https://e-commerce-production-fa5d.up-railway.app)
