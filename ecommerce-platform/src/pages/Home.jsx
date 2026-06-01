@@ -17,7 +17,7 @@ function Home({ searchQuery, setSearchQuery, selectedCategory, setSelectedCatego
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/products');
+      const res = await fetch('https://e-commerce-production-fa5d.up.railway.app/api/products');
       const data = await res.json();
       setProducts(data);
       setFilteredProducts(data);

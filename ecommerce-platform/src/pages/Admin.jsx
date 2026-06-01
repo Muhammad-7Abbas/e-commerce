@@ -46,7 +46,7 @@ function Admin() {
 
   const fetchStats = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/admin/stats', {
+      const res = await fetch('https://e-commerce-production-fa5d.up.railway.app/api/admin/stats', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -58,7 +58,7 @@ function Admin() {
 
   const fetchOrders = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/admin/orders', {
+      const res = await fetch('https://e-commerce-production-fa5d.up.railway.app/api/admin/orders', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -70,7 +70,7 @@ function Admin() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/products');
+      const res = await fetch('https://e-commerce-production-fa5d.up.railway.app/api/products');
       const data = await res.json();
       setProducts(data);
     } catch (error) {
@@ -82,7 +82,7 @@ function Admin() {
 
   const updateOrderStatus = async (orderId, status) => {
     try {
-      await fetch(`http://localhost:5000/api/admin/orders/${orderId}/status`, {
+      await fetch(`https://e-commerce-production-fa5d.up.railway.app/api/admin/orders/${orderId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ function Admin() {
   const deleteProduct = async (productId) => {
     if (!confirm('Delete this product?')) return;
     try {
-      await fetch(`http://localhost:5000/api/admin/products/${productId}`, {
+      await fetch(`https://e-commerce-production-fa5d.up.railway.app/api/admin/products/${productId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -129,7 +129,7 @@ function Admin() {
 
   const saveEdit = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/products/${editingProduct._id}`, {
+      const res = await fetch(`https://e-commerce-production-fa5d.up.railway.app/api/admin/products/${editingProduct._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ function Admin() {
 
   const saveAdd = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/admin/products', {
+      const res = await fetch('https://e-commerce-production-fa5d.up.railway.app/api/admin/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ function ProductDetails() {
 
   const fetchProduct = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`);
+      const res = await fetch(`https://e-commerce-production-fa5d.up.railway.app/api/products/${id}`);
       const data = await res.json();
       setProduct(data);
     } catch (error) {
