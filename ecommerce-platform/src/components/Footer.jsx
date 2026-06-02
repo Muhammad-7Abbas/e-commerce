@@ -45,15 +45,15 @@ function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <span className="text-sm">support@eshop.com</span>
+                <span className="text-sm">itsmuhammadabbas66@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <span className="text-sm">+1 234 567 890</span>
+                <span className="text-sm">+92 31 758 72 37 6</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={16} />
-                <span className="text-sm">123 Shop Street, NY</span>
+                <span className="text-sm">Swabi ,Pakistan</span>
               </li>
             </ul>
           </div>
